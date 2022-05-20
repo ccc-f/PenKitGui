@@ -1,7 +1,22 @@
 import os 
+import platform
 
 base_dir = os.getcwd()
-python = 'D:\pythonProject\fsafe-venv\python3.7\Scripts\python.exe'
+# 设置 工具的 Python 解释器位置
+# python = 'D:\pythonProject\\fsafe-venv\python3.7\Scripts\python.exe'
+python = 'python3'
+# themes_list = ['superhero','purse','yeti','lumen','journal']
+# 主题选择
+themes = 'superhero'
+# 每行工具按钮数量
+line_count = 4
+# UI 宽度
+width = 1400
+# UI 高度
+height = 700
+# 按钮宽度
+button_width = 25
+# 渗透工具
 tools = {
 '渗透测试':{
         '打开渗透测试目录':
@@ -14,7 +29,7 @@ tools = {
         ['God_btn', "'cd gui_pentest/Godzilla && ' + java8_path + ' -jar ' + 'Godzilla.jar'"],
         
         '冰蝎 T00ls 专版v3.0 Beta 11':
-        ['Beh_btn', "'cd gui_pentest/Behinder T00l专版 && ' + java8_path + ' -jar ' + 'Behinder.jar'"],
+        ['Beh_btn', " 'cd gui_pentest/Behinder T00l专版 && ' + java8_path + ' -jar ' + 'Behinder.jar' "],
         
         '冰蝎魔改版 v3.3.2':
         ['BehMod_btn'," 'cd gui_pentest/Behinder-Mode && ' + java8_path + ' -jar ' + 'Behinder-Mode.jar' "],
@@ -23,10 +38,10 @@ tools = {
         ['Tianxie_btn'," 'cd gui_pentest/TianXie && ' + java8_path + ' -jar ' + '天蝎权限管理工具.jar' "],
         
         'BurpSuite_pro v2022.3 ':
-        ['Burp_btn',"'cd gui_other/BurpSuite_Pro && ' + java9_path + ' -javaagent:BurpSuiteLoader_v2022.3.jar -noverify -jar burpsuite_pro_v2022.3.jar'"],
+        ['Burp_btn',"'cd gui_pentest/BurpSuite_Pro && ' + java9_path + ' -javaagent:BurpSuiteLoader_v2022.3.jar -noverify -jar burpsuite_pro_v2022.3.jar'"],
         
         'CobaltStrike v4.4':
-        ['Cob_btn',"'cd gui_other/CobaltStrike/Cobalt_Strike_4.4 && ' + java8_path + ' -XX:ParallelGCThreads=4 -XX:+AggressiveHeap -XX:+UseParallelGC -Xms512M -Xmx1024M -Dfile.encoding=UTF-8 -javaagent:CobaltStrikeCN.jar -jar cobaltstrike.jar $*'"]
+        ['Cob_btn',"'cd gui_pentest/CobaltStrike/Cobalt_Strike_4.4 && ' + java8_path + ' -XX:ParallelGCThreads=4 -XX:+AggressiveHeap -XX:+UseParallelGC -Xms512M -Xmx1024M -Dfile.encoding=UTF-8 -javaagent:CobaltStrikeCN.jar -jar cobaltstrike.jar $*'"]
 },
 '信息收集':{
         '打开信息收集目录':
@@ -48,7 +63,7 @@ tools = {
         ['Fofa_btn',"'cd gui_shouji/fofaviewer && ' + java8_path + ' -jar ' + 'fofaviewer.jar'"],
         
         'Sqlmap':
-        ['Sqlm_btn',"'start cmd /k \"cd gui_shouji/sqlmap\" '"],
+        ['Sqlm_btn'," 'start cmd /k \"cd gui_shouji/sqlmap\" ' "],
 
         'Oneforall':
         ['Onef_btn',"'start cmd /k \"cd gui_shouji/oneforall\" '"],
@@ -74,8 +89,8 @@ tools = {
         '通达OA综合利用工具 v1.0':
         ['ToDa_btn',"'cd gui_scan && ' + java8_path + ' -jar ' + 'TODA.jar'"],
 
-        'Gr33k漏洞利用工具集':
-        ['Gr3_btn'," '{python} gui_scan/Gr33k/Gr33k.py ' ".format(python=python)],
+        # 'Gr33k漏洞利用工具集':
+        # ['Gr3_btn'," '{python} {base_dir}/gui_scan/Gr33k/Gr33k.py ' ".format(python=python,base_dir=base_dir)],
 
         'Cas反序列化利用工具v1.1':
         ['Cas_btn'," ' cd gui_scan && ' + java8_path + ' -jar ' + 'CAS_cc2_Exploit-1.0-SNAPSHOTv1.1-all.jar' "],
@@ -133,16 +148,8 @@ tools = {
 
 },
 }
-# themes_list = ['superhero','purse','yeti','lumen','journal']
-themes = 'superhero'
-line_count = 4
-width = 1400
-height = 700
-button_width = 25
 
-import os
-import platform
-#获取当前绝对路径
+#路径设置
 tools_path = os.getcwd()
 if platform.system() == 'Windows' :
     java8_path = (tools_path + "\Java_path\jre_1.8_win\\bin\java").replace('\\','\\\\')

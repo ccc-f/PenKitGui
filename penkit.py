@@ -14,7 +14,7 @@ class PenKit():
         subprocess.Popen( 'cd gui_pentest/Godzilla && ' + java8_path + ' -jar ' + 'Godzilla.jar' , shell=True)
                 
     def Beh_btn():
-        subprocess.Popen( 'cd gui_pentest/Behinder T00l专版 && ' + java8_path + ' -jar ' + 'Behinder.jar' , shell=True)
+        subprocess.Popen(  'cd gui_pentest/Behinder T00l专版 && ' + java8_path + ' -jar ' + 'Behinder.jar'  , shell=True)
                 
     def BehMod_btn():
         subprocess.Popen(  'cd gui_pentest/Behinder-Mode && ' + java8_path + ' -jar ' + 'Behinder-Mode.jar'  , shell=True)
@@ -23,10 +23,10 @@ class PenKit():
         subprocess.Popen(  'cd gui_pentest/TianXie && ' + java8_path + ' -jar ' + '天蝎权限管理工具.jar'  , shell=True)
                 
     def Burp_btn():
-        subprocess.Popen( 'cd gui_other/BurpSuite_Pro && ' + java9_path + ' -javaagent:BurpSuiteLoader_v2022.3.jar -noverify -jar burpsuite_pro_v2022.3.jar' , shell=True)
+        subprocess.Popen( 'cd gui_pentest/BurpSuite_Pro && ' + java9_path + ' -javaagent:BurpSuiteLoader_v2022.3.jar -noverify -jar burpsuite_pro_v2022.3.jar' , shell=True)
                 
     def Cob_btn():
-        subprocess.Popen( 'cd gui_other/CobaltStrike/Cobalt_Strike_4.4 && ' + java8_path + ' -XX:ParallelGCThreads=4 -XX:+AggressiveHeap -XX:+UseParallelGC -Xms512M -Xmx1024M -Dfile.encoding=UTF-8 -javaagent:CobaltStrikeCN.jar -jar cobaltstrike.jar $*' , shell=True)
+        subprocess.Popen( 'cd gui_pentest/CobaltStrike/Cobalt_Strike_4.4 && ' + java8_path + ' -XX:ParallelGCThreads=4 -XX:+AggressiveHeap -XX:+UseParallelGC -Xms512M -Xmx1024M -Dfile.encoding=UTF-8 -javaagent:CobaltStrikeCN.jar -jar cobaltstrike.jar $*' , shell=True)
                 
     def info_btn():
         subprocess.Popen(  'start D:\pythonProject\PenKitGui\gui_shouji'  , shell=True)
@@ -47,7 +47,7 @@ class PenKit():
         subprocess.Popen( 'cd gui_shouji/fofaviewer && ' + java8_path + ' -jar ' + 'fofaviewer.jar' , shell=True)
                 
     def Sqlm_btn():
-        subprocess.Popen( 'start cmd /k "cd gui_shouji/sqlmap" ' , shell=True)
+        subprocess.Popen(  'start cmd /k "cd gui_shouji/sqlmap" '  , shell=True)
                 
     def Onef_btn():
         subprocess.Popen( 'start cmd /k "cd gui_shouji/oneforall" ' , shell=True)
@@ -69,9 +69,6 @@ class PenKit():
                 
     def ToDa_btn():
         subprocess.Popen( 'cd gui_scan && ' + java8_path + ' -jar ' + 'TODA.jar' , shell=True)
-                
-    def Gr3_btn():
-        subprocess.Popen(  'D:\pythonProjectsafe-venv\python3.7\Scripts\python.exe gui_scan/Gr33k/Gr33k.py '  , shell=True)
                 
     def Cas_btn():
         subprocess.Popen(  ' cd gui_scan && ' + java8_path + ' -jar ' + 'CAS_cc2_Exploit-1.0-SNAPSHOTv1.1-all.jar'  , shell=True)

@@ -1,3 +1,3 @@
 -i https://pypi.tuna.tsinghua.edu.cn/simple
+Pillow==9.1.1
 ttkbootstrap==1.7.4
-
