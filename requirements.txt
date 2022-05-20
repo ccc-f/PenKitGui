@@ -1,0 +1,3 @@
+-i https://pypi.tuna.tsinghua.edu.cn/simple
+ttkbootstrap==1.7.4
+
