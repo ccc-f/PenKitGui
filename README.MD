@@ -20,14 +20,18 @@
 项目目录结构：
 
 ```
-├── penkit.py
-├── penkitgui.py
-├── JAR_Management.fbp
-├── gui_other
+├── gui_pentest
 ├── gui_scan
 ├── gui_shouji
-├── gui_webshell
+├── imgs
 ├── Java_path
+├── codedBuild.py
+├── penkit.py
+├── penkitgui.bat
+├── penkitgui.py
+├── penkitgui.vbs
+├── README.MD
+├── requirements.txt
 └── setting.py
 ```
 
