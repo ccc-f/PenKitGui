@@ -1,6 +1,7 @@
 from setting import tools,line_count,themes,width,button_width,height
 
 def gen_click():
+    no = 1
     with open('penkit.py','w',encoding='utf-8')as f:
         f.write("""
 import subprocess
@@ -10,11 +11,12 @@ class PenKit():
         """
         )
         for t in tools.values():
-            for btn in t.values():
+            for cmd in t.values():
                 f.write("""
-    def {func}():
+    def btn_{no}():
         subprocess.Popen( {cmd} , shell=True)
-                """.format(func=btn[0],cmd=btn[1]))
+                """.format(no=no,cmd=cmd))
+                no += 1
 
 def gen_body():
     i = 0
@@ -40,6 +42,7 @@ pk.pack(
     fill=BOTH
 )
         """.format(themes=themes,width=width,height=height))
+        no = 0
         for title,tool in tools.items():
             f.write("""
 #################### {title} ####################
@@ -49,16 +52,18 @@ f_{number} = ttk.Frame(pk)
             row = 1
             for tool_name,tool_info in tool.items():
                 col += 1
+                no += 1
                 if col % (line_count+1) == 0:
                     col = 1
                     row += 1
                 f.write("""
 ttk.Button(f_{number},text="{tool}", bootstyle=(PRIMARY, "success-outline-toolbutton"),
-            width={button_width}, command=PenKit.{tool_btn}).grid(row={row},column={col},padx=20,pady=10)
-                """.format(number=i,tool=tool_name,button_width=button_width,tool_btn=tool_info[0],row=row,col=col))
+            width={button_width}, command=PenKit.btn_{no}).grid(row={row},column={col},padx=20,pady=10)
+                """.format(number=i,tool=tool_name,button_width=button_width,no=no,row=row,col=col))
             f.write("""
 pk.add(f_{number}, text='     {title}    ')
             """.format(number=i,title=title))
+            
             i += 1
         f.write("""
 root.mainloop()

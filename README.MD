@@ -96,15 +96,15 @@ button_width = 25
 tools = {
 'f1名称':{
 	'工具名称':
-	['工具函数名称',"需要执行的命令"],
-	'':
-	[],
+	"需要执行的命令",
+	'2':
+	"2",
 },
 '选项卡2名称':{
 	'工具名称':
-	['工具函数名称',"需要执行的命令"],
+	"需要执行的命令",
 	'':
-	[],
+	"cmd",
 },
 }
 ```
@@ -115,15 +115,15 @@ tools = {
 'cd gui_pentest/工具目录 && ' + java8_path + ' -jar ' + '工具名称.jar'
 ```
 
-![image-20220520200647477](imgs/README/image-20220520200647477.png)
+![image-20220521114812929](imgs/README/image-20220521114812929.png)
 
 如果添加的是 python 工具，格式如下：
 
 ```
-['Gr3_btn'," '{python} {base_dir}/gui_scan/Gr33k/Gr33k.py ' ".format(python=python,base_dir=base_dir)],
+" '{python} {base_dir}/gui_scan/Gr33k/Gr33k.py ' ".format(python=python,base_dir=base_dir),
 ```
 
-![image-20220520200830544](imgs/README/image-20220520200830544.png)
+![image-20220521114846146](imgs/README/image-20220521114846146.png)
 
 如果需要打开 cmd 命令行，格式如下：
 
@@ -131,15 +131,7 @@ tools = {
 'start cmd /k \"cd gui_shouji/sqlmap\" '
 ```
 
-![image-20220520201156585](imgs/README/image-20220520201156585.png)
-
-
-
-## 注意事项
-
-1. 工具函数名称不能使用**数字特殊字符**开头，建议采用统一格式，`name_btn` 。
-
-<img src="imgs/README/image-20220520181802694.png" alt="image-20220520181802694" style="zoom:50%;" />
+![image-20220521114911931](imgs/README/image-20220521114911931.png)
 
 ## 免责声明
 
