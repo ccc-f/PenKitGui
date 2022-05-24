@@ -50,77 +50,74 @@ class PenKit():
         subprocess.Popen(  'start cmd /k "cd gui_shouji/sqlmap" '  , shell=True)
                 
     def btn_16():
-        subprocess.Popen( 'start cmd /k "cd gui_shouji/oneforall" ' , shell=True)
-                
-    def btn_17():
         subprocess.Popen( 'start cmd /k "cd gui_shouji/jsfinder" ' , shell=True)
                 
-    def btn_18():
+    def btn_17():
         subprocess.Popen( ' start cmd /k "cd gui_shouji/Packer-Fuzzer-1.3" ' , shell=True)
                 
-    def btn_19():
+    def btn_18():
         subprocess.Popen(  'start D:\pythonProject\PenKitGui\gui_scan'  , shell=True)
                 
-    def btn_20():
+    def btn_19():
         subprocess.Popen(  ' start powershell -NoExit cd D:\pythonProject\PenKitGui\gui_scan\ '  , shell=True)
                 
-    def btn_21():
+    def btn_20():
         subprocess.Popen(  'start cmd /k " cd gui_scan/403bypasser " '  , shell=True)
                 
-    def btn_22():
+    def btn_21():
         subprocess.Popen( 'cd gui_scan && ' + java8_path + ' -jar ' + 'TODA.jar' , shell=True)
                 
-    def btn_23():
+    def btn_22():
         subprocess.Popen(  ' cd gui_scan && ' + java8_path + ' -jar ' + 'CAS_cc2_Exploit-1.0-SNAPSHOTv1.1-all.jar'  , shell=True)
                 
-    def btn_24():
+    def btn_23():
         subprocess.Popen(   ' cd gui_scan && ' + java8_path + ' -jar ' + 'SJ-V1.9.jar'  , shell=True)
                 
-    def btn_25():
+    def btn_24():
         subprocess.Popen(  ' cd gui_scan/thinkphp && ' + java8_path + ' -jar ' + 'ThinkPHP.V2.3.by.jar'  , shell=True)
                 
-    def btn_26():
+    def btn_25():
         subprocess.Popen(  ' cd gui_scan/thinkphp && ' + java8_path + ' -jar ' + 'ThinkphpGUI-1.2-SNAPSHOT.jar'  , shell=True)
                 
-    def btn_27():
+    def btn_26():
         subprocess.Popen(  'cd gui_scan/thinkphp && ' + java8_path + ' -jar ' + 'thinkphp命令执行检测工具.jar'  , shell=True)
                 
-    def btn_28():
+    def btn_27():
         subprocess.Popen(  ' cd gui_scan/weblogic/weblogic-framework-0.2.3 && ' + java8_path + ' -jar ' + 'weblogic-framework-0.2.3-all-jar-with-dependencies.jar'  , shell=True)
                 
-    def btn_29():
+    def btn_28():
         subprocess.Popen(  ' cd gui_scan/weblogic && ' + java8_path + ' -jar ' + 'weblogic_exploit-1.0-SNAPSHOT-all.jar'  , shell=True)
                 
-    def btn_30():
+    def btn_29():
         subprocess.Popen(  ' cd gui_scan && ' + java8_path + ' -jar ' + '深X服edr任意用户登陆检测工具.jar'  , shell=True)
                 
-    def btn_31():
+    def btn_30():
         subprocess.Popen(  ' cd gui_scan/shiro/ShiroExploit.V2.51 && ' + java8_path + ' -jar ' + 'ShiroExploit.jar'  , shell=True)
                 
-    def btn_32():
+    def btn_31():
         subprocess.Popen(  ' cd gui_scan/shiro && ' + java8_path + ' -jar ' + 'ShiroScan-1.1.jar'  , shell=True)
                 
-    def btn_33():
+    def btn_32():
         subprocess.Popen(  'cd gui_scan/shiro/shiro_attack_2.2 && ' + java8_path + ' -jar ' + 'shiro_attack-2.2.jar'  , shell=True)
                 
-    def btn_34():
+    def btn_33():
         subprocess.Popen(  'cd gui_scan/Spring/SpringBootExploit-1.3-SNAPSHOT-all && ' + java8_path + ' -jar ' + 'SpringBootExploit-1.3-SNAPSHOT-all.jar'  , shell=True)
                 
-    def btn_35():
+    def btn_34():
         subprocess.Popen(  'cd gui_scan/Log4j/ && ' + java8_path + ' -jar ' + 'woodpecker-framework.1.3.3.jar'  , shell=True)
                 
-    def btn_36():
+    def btn_35():
         subprocess.Popen(  ' cd gui_scan && ' + java8_path + ' -jar ' + 'oracleShell.jar'  , shell=True)
                 
-    def btn_37():
+    def btn_36():
         subprocess.Popen(  ' cd gui_scan/tomcat && ' + java8_path + ' -jar ' + 'tomcat.jar'  , shell=True)
                 
-    def btn_38():
+    def btn_37():
         subprocess.Popen(  ' cd gui_scan/json && json反序列化检查工具.exe '  , shell=True)
                 
-    def btn_39():
+    def btn_38():
         subprocess.Popen(  'cd gui_scan/AliyunAkTools && AliyunAkTools.exe'  , shell=True)
                 
-    def btn_40():
+    def btn_39():
         subprocess.Popen(  ' cd gui_scan/Multiple.Database.Utilization.Tools.-.v2.0.6 && ' + java8_path + ' -jar ' + 'MDUT.jar'  , shell=True)
                 

@@ -40,7 +40,7 @@ tools = {
         'BurpSuite_pro v2022.3 ':
         "'cd gui_pentest/BurpSuite_Pro && ' + java9_path + ' -javaagent:BurpSuiteLoader_v2022.3.jar -noverify -jar burpsuite_pro_v2022.3.jar'",
         
-        'CobaltStrike v4.4':
+        'CobaltStrike 去特征版 v4.4':
         "'cd gui_pentest/CobaltStrike/Cobalt_Strike_4.4 && ' + java8_path + ' -XX:ParallelGCThreads=4 -XX:+AggressiveHeap -XX:+UseParallelGC -Xms512M -Xmx1024M -Dfile.encoding=UTF-8 -javaagent:CobaltStrikeCN.jar -jar cobaltstrike.jar $*'"
 },
 '信息收集':{
@@ -65,8 +65,8 @@ tools = {
         'Sqlmap':
         " 'start cmd /k \"cd gui_shouji/sqlmap\" ' ",
 
-        'Oneforall':
-        "'start cmd /k \"cd gui_shouji/oneforall\" '",
+        # 'Oneforall':
+        # "'start cmd /k \"cd gui_shouji/oneforall\" '",
 
         'JsFinder':
         "'start cmd /k \"cd gui_shouji/jsfinder\" '",
