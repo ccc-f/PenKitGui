@@ -10,6 +10,7 @@
 
 工具箱里面附带的工具，为作者在网络上收集而来，不保证安全性。
 分享链接：https://www.123pan.com/s/gHUDVv-AusG3 提取码: YPp1
+Java_path: https://www.123pan.com/s/gHUDVv-RbsG3 提取码:1234
 
 ## 原理
 
