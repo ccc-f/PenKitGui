@@ -9,45 +9,12 @@
 这个工具有几个优点：拓展性好，方便修改，适合命令行工具。
 
 工具箱里面附带的工具，为作者在网络上收集而来，不保证安全性。
-分享链接：https://www.123pan.com/s/gHUDVv-AusG3 提取码: YPp1
+
+分享链接：
+
+Tools：https://www.123pan.com/s/gHUDVv-AusG3 提取码: YPp1
+
 Java_path: https://www.123pan.com/s/gHUDVv-H3WG3 提取码:1234 解压密码：java
-
-## 原理
-
-`codeBuild.py`  通过读取 `settings.py` 里的数据，自动生成 `penkitgui.py` 和 `penkit.py` 。
-如果修改了 `settings.py` ,运行一下 `codeBuild.py` 即可更新 `penkitgui.py` 和 `penkit.py`。
-
-## Detail
-
-项目目录结构：
-
-```
-├── gui_pentest
-├── gui_scan
-├── gui_shouji
-├── imgs
-├── Java_path
-├── codedBuild.py
-├── penkit.py
-├── penkitgui.bat
-├── penkitgui.py
-├── penkitgui.vbs
-├── README.MD
-├── requirements.txt
-└── setting.py
-```
-
-使用 `ttkibootstrap` 构建
-
-![image-20220520173616217](imgs/README/image-20220520173616217.png)
-
-![image-20220520173823059](imgs/README/image-20220520173823059.png)
-
-![image-20220520173840685](imgs/README/image-20220520173840685.png)
-
-
-
-![image-20220520200321193](imgs/README/image-20220520200321193.png)
 
 ## 如何使用
 
@@ -71,13 +38,54 @@ python3 penkitgui.py
 pip install -r requirements.txt
 ```
 
+下载网盘文件到本地，解压缩到项目根目录。
+
+项目目录结构如下：
+
+```
+├── gui_pentest
+├── gui_scan
+├── gui_shouji
+├── imgs
+├── Java_path
+├── codedBuild.py
+├── penkit.py
+├── penkitgui.bat
+├── penkitgui.py
+├── penkitgui.vbs
+├── README.MD
+├── requirements.txt
+└── setting.py
+```
+
 **非Debug模式运行**
 
 直接双击 `penkitgui.vbs`
 
 **Debug模式运行**
 
-直接双击 `penkitgui.bat`
+直接双击 `penkitgui.bat
+
+## 原理
+
+`codeBuild.py`  通过读取 `settings.py` 里的数据，自动生成 `penkitgui.py` 和 `penkit.py` 。
+如果修改了 `settings.py` ,运行一下 `codeBuild.py` 即可自动更新。
+
+## Detail
+
+使用 `ttkibootstrap` 构建
+
+![image-20220520173616217](imgs/README/image-20220520173616217.png)
+
+![image-20220520173823059](imgs/README/image-20220520173823059.png)
+
+![image-20220520173840685](imgs/README/image-20220520173840685.png)
+
+
+
+![image-20220520200321193](imgs/README/image-20220520200321193.png)
+
+`
 
 ## 如何DIY
 
@@ -154,19 +162,19 @@ start reports
 ----------------------------
 ## 2022/10/23
 
-好久没看这个项目了，不知不觉已经有53个star了，受宠若惊。
+好久关注这个项目了，不知不觉已经有53个star了，受宠若惊。
 
 这个项目所集成的工具应该不会再更新了，希望大家自行diy，丰富自己的工具库，逐渐成长。
 
 使用了那么久，谈谈这个工具的使用感受吧。
 
-首先，打开各种工具是非常方便的，只需要付出一点时间，将其写到settings.py文件里面，一键更新ui，一键运行程序，不需要切换路径，不需要输入命令，可以使用python的虚拟环境运行，随着集成的工具越多，它的优势也越明显。
+首先，打开各种工具是非常方便的，只需要付出一点时间，将其写到setting.py文件里面，一键更新ui，一键运行程序，不需要切换路径，不需要输入命令，可以使用python的虚拟环境运行，随着集成的工具越多，它的优势也越明显。
 
-但让我不太满意的地方是，把它写到settings.py的过程中并不是那么优雅。
+但让我不太满意的地方是，把它写到setting.py的过程中并不是那么优雅。
 后续有空的话，可能会在工具的菜单栏添加一个傻瓜式的增加、删除工具的功能。
 如果谁有更好的想法的话，欢迎提出。
 
-让渗透测试变得更美好。
+致力于让渗透测试变得优雅。
 
 ## 免责声明
 
