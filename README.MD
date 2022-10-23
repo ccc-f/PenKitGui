@@ -10,11 +10,12 @@
 
 工具箱里面附带的工具，为作者在网络上收集而来，不保证安全性。
 分享链接：https://www.123pan.com/s/gHUDVv-AusG3 提取码: YPp1
-Java_path: https://www.123pan.com/s/gHUDVv-RbsG3 提取码:1234
+Java_path: https://www.123pan.com/s/gHUDVv-H3WG3 提取码:1234 解压密码：java
 
 ## 原理
 
-`codeBuild.py`  通过读取 `settings.py` 里的数据，自动生成 `penkitgui.py` 和 `penkit.py` 。如果修改了 `settings.py` ,运行一下 `codeBuild.py` 即可更新 `penkitgui.py` 和 `penkit.py`。
+`codeBuild.py`  通过读取 `settings.py` 里的数据，自动生成 `penkitgui.py` 和 `penkit.py` 。
+如果修改了 `settings.py` ,运行一下 `codeBuild.py` 即可更新 `penkitgui.py` 和 `penkit.py`。
 
 ## Detail
 
@@ -138,6 +139,20 @@ tools = {
 ```
 
 ![image-20220521114911931](imgs/README/image-20220521114911931.png)
+
+一点关于让cmd更美好的tips：
+start .	
+start reports
+强烈推荐使用microsoft Store下载 Windows Terminal 替换 cmd 命令行，它可以设置默认以管理员身份运行，方便运行一些需要以管理员身份运行的工具，界面大气美观，可以自定义终端壁纸👍👍👍。
+
+----------------------------
+## 2022/10/23
+这个项目所集成的工具应该不会再更新了，希望大家自行diy，丰富自己的工具库，逐渐成长。
+使用了那么久，谈谈这个工具的使用感受吧。
+首先，打开各种工具是非常方便的，只需要付出一点时间，将其写到settings.py文件里面，一键更新ui，一键运行程序，不需要切换路径，不需要输入命令，可以使用python的虚拟环境运行，随着集成的工具越多，它的优势也越明显。
+但让我不太满意的地方是，把它写到settings.py的过程中并不是那么优雅。
+后续有空的话，可能会在工具的菜单栏添加一个傻瓜式的增加、删除工具的功能。
+如果谁有更好的想法的话，欢迎提出。
 
 ## 免责声明
 
