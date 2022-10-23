@@ -89,6 +89,10 @@ pip install -r requirements.txt
 
 ## 如何DIY
 
+> diy工具之后，别忘了运行一下 
+>
+> python codeBuild.py
+
 `setting.py` 文件：
 
 参数如下：
@@ -158,6 +162,8 @@ start reports
 强烈推荐使用microsoft Store下载 Windows Terminal 替换 cmd 命令行。
 
 它可以设置默认以管理员身份运行，方便运行一些需要以管理员身份运行的工具，界面大气美观，可以自定义终端壁纸👍👍👍。
+
+
 
 ----------------------------
 ## 2022/10/23
