@@ -14,7 +14,7 @@
 
 Tools：https://www.123pan.com/s/gHUDVv-AusG3 提取码: YPp1
 
-Java_path: 链接：https://pan.baidu.com/s/1Ul4S_STEOLhmzjSIP_fdkQ 提取码：1234 解压密码：java
+Java_path: 奶牛快传 https://cowtransfer.com/s/71cf22ee780c40 解压密码 java
 
 ## 如何使用
 
